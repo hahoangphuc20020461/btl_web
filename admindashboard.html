@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <style>
+    .image-container {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .tab-binhthuong {
+        background-color: #eae8e8;
+        border-left: solid 1px #dcdcdc;
+        border-right: solid 1px #dcdcdc;
+        border-top: solid 1px #dddddd;
+        border-bottom: solid 0px #dddddd;
+    }
+  </style>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="image-container"> 
+        <img src="/img/15_generated.jpg" class="" alt="Logo" max-width="100%" height="50px" style="border-radius: 50%;">
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a id="danhmuc" class="tab-binhthuong" href="admindashboard.html" >Danh mục sản phẩm</a></li>
+        <!-- <li><a id="captk" class="tab-binhthuong" href="test.html" >Cấp tài khoản</a></li> -->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle tab-binhthuong" data-toggle="dropdown" id="m2" href="#">Cấp tài khoản <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  id="dkcs" href="signup1.html">Cơ sở sản xuất</a></li>
+              <li><a  id="dkpp" href="signup2.html">đại lí phân phối</a></li>
+              <li><a  id="dkbh" href="signup3.html">trung tâm bảo hành</a></li>
+            </ul>
+        <li><a id="qlsp" class="tab-binhthuong" href="quanlidongsanpham.html" >Quản lí dòng sản phẩm</a></li>
+      
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<div class="container-fluid">
+<h1>Danh mục các sản phẩm:</h1>
+</div>
+
+<table class="table table-hover"> <!--bảng products -->
+  <thead>
+    <tr>
+      <th scope="col">STT</th>
+       <th scope="col">Mã Sản Phẩm</th> <!--produc_id -->
+       <th scope="col">Tên Sản Phẩm</th> <!--produc_name -->
+       <th scope="col">Dòng Sản Phẩm</th> <!--produc_line -->
+       <th scope="col">Giá Sản Phẩm</th> <!--produc_price -->
+       <th scope="col">Mô tả sản phẩm</th> <!--description -->
+       <th scope="col">Trạng thái sản phẩm</th> <!--product_status -->
+       <th scope="col">Mã Kho</th>
+       <th scope="col">Mã Shop</th>
+       <th scope="col">Thời gian bảo hành</th>
+       <th scope="col">Đang bảo hành</th>
+       <th scope="col">Ngày bán</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <th scope="row">AAA</th>
+      <th scope="row">Dưa leo</th>
+      <th scope="row">quả</th>
+      <th scope="row">10.000</th>
+      <th scope="row">dưa leo tươi</th>
+      <th scope="row">còn hàng</th>
+    </tr>
+  </tbody>
+</table>
+
+<div class="clearfix bottomfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 navbar-fixed-bottom" style="margin-top:auto;">
+        <span class="copyright">Copyright &copy; 2022, Công ty BigCorp</span>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>
