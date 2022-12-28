@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Trung tâm bảo hành</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -60,31 +60,36 @@
     </div>
   </div>
 </nav>
- 
-<div class="container-fluid">
-    <h1>Danh mục các sản phẩm bảo hành:</h1>
-    </div>
+
+<form method="POST" action="btn_themsanpham.html">
+    <div class="container">
+      <h1>Thêm sản phẩm đã sửa:</h1>
     
-    <table class="table table-hover"> <!--bảng products -->
-      <thead>
-        <tr>
-          <th scope="col">STT</th>
-           <th scope="col">Mã Sản Phẩm</th> <!--produc_id -->
-           <th scope="col">Tên Sản Phẩm</th>
-           <th scope="col">Mã trung tâm bảo hành</th>
-           <th scope="col">Trạng thái bảo hành</th> <!--produc_name -->
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <th scope="row">XXX</th>
-          <th scope="row">AAA</th>
-          
-        </tr>
-      </tbody>
-    </table>
+      <div class="col-sm-pull-6">
+        <label>Mã sản phẩm</label>
+        <input type="text" class="form-control" placeholder="Mã sản phẩm trả lại">
+        <br>
+      </div>
+      <div class="col-sm-pull-6">
+        <label>Mã trung tâm bảo hành</label>
+        <input type="text" class="form-control" placeholder="Mã trung tâm bảo hành">
+        <br>
+      </div> 
+      <div class="col-sm-pull-6">
+        <label>Trạng thái bảo hành</label>
+        <input type="text" class="form-control" placeholder="Trạng thái bảo hành">
+        <br>
+      </div>  
+  
+  </div>
+  <p>
+
+  </p>
+  <div class="themsp container">
+    <button type="submit" class="btn btn-success clearfix">Thêm</button>
+  </div>
  
+  
   <div class="clearfix bottomfooter">
     <div class="container">
       <div class="row">

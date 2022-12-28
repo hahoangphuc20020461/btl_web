@@ -49,26 +49,47 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a id="danhmuc" class="tab-binhthuong" href="cososanxuat.html" >Kho sản phẩm</a></li>
+        <li><a id="danhmuc" class="tab-binhthuong" href="dailyphanphoi.html" >Sản Phẩm Mới Từ Cơ Sở Sản Xuất</a></li>
         <!-- <li><a id="captk" class="tab-binhthuong" href="test.html" >Cấp tài khoản</a></li> -->
-        
-        <li><a id="qlsp" class="tab-binhthuong" href="cososanxuat_xuatsanpham.html" >Xuất sản phẩm cho đại lý</a></li>
-        <li><a id="tksp_cssx" class="tab-binhthuong" href="cososanxuat_thongkesanpham.html" >Thống kê sản phẩm</a></li>
-        <li><a id="sptv_cssx" class="tab-binhthuong" href="cososanxuat_sanphamtrave.html" >Sản phẩm trả về</a></li>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle tab-binhthuong" data-toggle="dropdown" id="m2" href="#">Nhận sản phẩm <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  id="dkcs" href="#">Sản Phẩm Cần Bảo Hành</a></li>
+              <li><a  id="dkpp" href="dailyphanphoi_sanphamdabh.html">Sản Phẩm Đã Bảo Hành</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle tab-binhthuong" data-toggle="dropdown" id="m2" href="#">Thống kê sản phẩm <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  id="dkcs" href="#">Loại Sản Phẩm</a></li>
+              <li><a  id="dkpp" href="#">Số Lượng Sản Phẩm Bán Ra</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <li><a id="tksp_cssx" class="tab-binhthuong" href="#" >Bán sản phẩm cho khách hàng</a></li>
+        <li><a id="sptv_cssx" class="tab-binhthuong" href="#" >Trả sản phẩm cho cơ sở sản xuất</a></li>
     </div>
   </div>
 </nav>
  
 <div class="container-fluid">
-  <h1>Sản phẩm được xuất cho đại lý:</h1>
+  <h1>Danh Sách Sản Phẩm Mới:</h1>
   </div>
-  
+ <div class="container-fluid">
+  <a href="dailyphanphoi_themsanpham.html"><button type="button" class="btn btn-primary">Thêm sản phẩm</button></a>
+ </div> 
   <table class="table table-hover"> <!--bảng products -->
     <thead>
       <tr>
         <th scope="col">STT</th>
-         <th scope="col">Mã Kho Sản Phẩm</th> <!--stock_id -->
-         <th scope="col">Địa chỉ kho</th>        
+         <th scope="col">Mã Đại lý</th> <!--shop_id -->        
+         <th scope="col">Tên Đại Lý</th>
+         <th scope="col">Địa chỉ đại lý</th>
          <th scope="col">Mã sản phẩm</th>
          <th scope="col">Tên sản phẩm</th>
       </tr>
@@ -76,9 +97,8 @@
     <tbody>
       <tr>
         <th scope="row">1</th>
-        <th scope="row">XXX</th>
-        
-        <th scope="row"></th>
+        <th scope="row">XXX</th>        
+        <th scope="row">nnn</th>
       </tr>
     </tbody>
   </table>

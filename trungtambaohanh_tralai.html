@@ -55,29 +55,33 @@
         <li><a id="spds" class="tab-binhthuong" href="trungtambaohanh_dasuachua.html" >Sản phẩm đã sửa</a></li>
         <li><a id="spl" class="tab-binhthuong" href="trungtambaohanh_tralai.html" >Sản phẩm không thể sửa</a></li>
         <li><a id="tksp_ttbh" class="tab-binhthuong" href="trungtambaohanh_thongke.html" >Thống kê sản phẩm</a></li>
+        <li><a id="tksp_ttbh" class="tab-binhthuong" href="trungtambaohanh_sanphamcansua.html" >Sản phẩm cần sửa</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container-fluid">
-    <a href="trungtambaohanh_themsptralai.html"><button type="button" class="btn btn-primary">Thêm sản phẩm</button></a>
-</div>
- 
-<div class="container-fluid">
     <h1>Danh mục các sản phẩm không thể sửa:</h1>
     </div>
-    
+    <div class="container-fluid">
+      <button type="button" class="btn btn-danger">Xóa sản phẩm</button>
+        <a href="trungtambaohanh_themsptralai.html"><button type="button" class="btn btn-primary">Thêm sản phẩm</button></a>
+    </div>
+     
     <table class="table table-hover"> <!--bảng products -->
       <thead>
         <tr>
+          <th scope="col"></th>
            <th scope="col">STT</th>
            <th scope="col">Mã Sản Phẩm</th> <!--give_back_id -->
+           <th scope="col">Mã trung tâm bảo hành</th>
            <th scope="col">Trạng thái bảo hành</th> <!--produc_id -->
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td><input type="checkbox" name="chk" /></td>
           <th scope="row">1</th>
           <th scope="row">XXX</th>
           <th scope="row">AAA</th>
