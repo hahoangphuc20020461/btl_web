@@ -85,30 +85,40 @@
   </div>
 </nav>
  
-<div class="container-fluid">
-    <h1>Thống kê loại sản phẩm:</h1>
-    </div>
+
+<form method="POST" action="btn_themsanpham.html">
+    <div class="container">
+      <h1>Thêm sản phẩm:</h1>
     
-    <table class="table table-hover"> <!--bảng products -->
-      <thead>
-        <tr>
-          <th scope="col">STT</th>
-          <th scope="col">Mã Sản phẩm</th> <!--give_back_id -->
-          <th scope="col">Tên sản phẩm</th>
-          <th scope="col">Mã kho sản phẩm</th> <!--produc_id -->
-          <th scope="col">Ngày nhập</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <th scope="row">1</th>
-         <th scope="row">XXX</th>
-         <th scope="row">AAA</th>
-          
-        </tr>
-      </tbody>
-    </table>
+      <div class="col-xs-pull-3">
+        <label for="">Mã Sản Phẩm</label>
+        <input type="text" class="form-control" placeholder="Mã sản phẩm" id="" name="">
+        <br>
+      </div>
+      <div class="col-xs-pull-3">
+        <label for="">Tên Sản Phẩm</label>
+        <input type="text" class="form-control" placeholder="Tên sản phẩm" id="" name="">
+        <br>
+      </div>
+      <div class="col-xs-pull-3">
+        <label for="">Mã kho sản phẩm</label>
+        <input type="text" class="form-control" placeholder="Trạng thái bảo hành" id="" name="">
+        <br>
+        <div class="col-xs-pull-3">
+            <label for="">Lí do hoàn trả</label>
+            <input type="text" class="form-control" placeholder="Lí do hoàn trả" id="" name="">
+            <br>
+      </div>
+  
+  </div>
+  <p>
+
+  </p>
+  <div class="themsp container">
+    <button type="submit" class="btn btn-success clearfix">Thêm</button>
+  </div>
  
+  </form>
   <div class="clearfix bottomfooter">
     <div class="container">
       <div class="row">
